@@ -1,0 +1,187 @@
+<div class="">
+  <div class="container  bg_grey pt-4 pl-0 pr-0">
+    <nav class="navbar bg_black bordernav pb-0">
+      <div class="row w-100">
+        <div class="col-md-2">
+          <a class="navbar-brand p-0" href="#">
+            <img src="../assets/images/imdblogo.png" class="icon">
+          </a>
+        </div>
+        <div class="col-md-10">
+          <div class="row w-100">
+            <div class="col-md-6 p-0">
+              <div class="d-flex flex-row align-items-start">
+                <form class="form w-100 ">
+                  <input type="text" class="form-control height_30 rounded-0 p-0" placeholder="Find Movies,TV shows,Celebrities and more">
+                </form>
+              </div>
+            </div>
+            <div class="col-md-2 p-0 ">
+              <div class="btn-group w-100">
+                <button class="btn btn w-100 btn-sm dropdown-toggle height_30 rounded-0 bg_white " type="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  All
+                </button>
+                <div class="dropdown-menu">
+                  ...
+                </div>
+                <i class="material-icons bg_yellow pl-2">
+                  search
+                </i>
+              </div>
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+          </div>
+          <div class="row w-100">
+            <div class="col-md-8">
+              <div class="row w-100">
+                <div class=" navbar-collapse" id="navbarsExampleDefault">
+                  <div class="d-flex flex-row bd-highlight ">
+                    <div class="dropdown col-md-3 pl-0 pr-0 ml-1 border-left">
+                      <button class="btn btn-secondary dropdown-toggle lineht bg_black border-0 font_15 text-left" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Movies, TV
+                        <br>& Show times
+                      </button>
+                      <div class="dropdown-menu width-300" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-item">
+                          <div class="row">
+                            <div class="col-md-6 p-1">
+                              <div class="d-flex flex-column bd-highlight mb-3">
+                                <h5 class="font_gold">Movies</h5>
+                                <div class="p-1 bd-highlight">
+                                  <a class="" (click)="gotoGetallmovies()">Browse Movies
+                                  </a>
+                                </div>
+                                <div class="p-1 " (click)="gotoGetallmovies()">Latest Trailers</div>
+                                <h5 class="font_gold">Movies by Genre</h5>
+
+                                <p class="card-text m-0 p-1" (click)="gotoMovieByGenre(generes[1])">Top comedy movies</p>
+                                <p class="card-text m-0 p-1" (click)="gotoMovieByGenre(generes[0])"> Top thriller movies</p>
+                                <p class="card-text m-0 p-1" (click)="gotoMovieByGenre(generes[2])">Top documentary movies</p>
+
+
+                              </div>
+                            </div>
+                            <div class="col-md-6 p-1">
+                              <div class="d-flex flex-column bd-highlight mb-3">
+                                <p class="card-text m-0 p-1" (click)="gotoMovieByGenre(generes[3])"> Top short movies</p>
+                                <p class="card-text m-0 p-1" (click)="gotoMovieByGenre(generes[4])">Top crime movies</p>
+                                <p class="card-text m-0 p-1" (click)="gotoMovieByGenre(generes[5])"> Top Western movies</p>
+                                <p class="card-text m-0 p-1" (click)="gotoMovieByGenre(generes[6])">Top Family movies</p>
+                                <p class="card-text m-0 p-1" (click)="gotoMovieByGenre(generes[7])"> Top Animation movies</p>
+                                <p class="card-text m-0 p-1" (click)="gotoMovieByGenre(generes[8])"> Top drama movies</p>
+                                <p class="card-text m-0 p-1" (click)="gotoMovieByGenre(generes[9])"> Top romance movies</p>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="dropdown col-md-3 pl-0 pr-0 border-left">
+                      <button class="btn btn-secondary dropdown-toggle lineht bg_black border-0 font_15 text-left" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Celebs,Events
+                        <br>and photos
+                      </button>
+                      <div class="dropdown-menu width-300" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="p-2 bd-highlight">Flex item 1</div>
+                                <div class="p-2 bd-highlight">Flex item 2</div>
+                                <div class="p-2 bd-highlight">Flex item 3</div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="p-2 bd-highlight">Flex item 1</div>
+                                <div class="p-2 bd-highlight">Flex item 2</div>
+                                <div class="p-2 bd-highlight">Flex item 3</div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="dropdown col-md-3 pl-0 pr-0  border-left">
+                      <button class="btn btn-secondary dropdown-toggle lineht bg_black border-0 font_15 text-left" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        News&
+                        <br>Community'
+                      </button>
+                      <div class="dropdown-menu width-300" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="p-2 bd-highlight">Flex item 1</div>
+                                <div class="p-2 bd-highlight">Flex item 2</div>
+                                <div class="p-2 bd-highlight">Flex item 3</div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="p-2 bd-highlight">Flex item 1</div>
+                                <div class="p-2 bd-highlight">Flex item 2</div>
+                                <div class="p-2 bd-highlight">Flex item 3</div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="dropdown col-md-3 pl-0 pr-0  border-left border-right">
+                      <button class="btn btn-secondary dropdown-toggle lineht bg_black border-0 font_15 h-100" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Watchlist
+                      </button>
+                      <div class="dropdown-menu width-300" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-item">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="p-2 bd-highlight">Flex item 1</div>
+                                <div class="p-2 bd-highlight">Flex item 2</div>
+                                <div class="p-2 bd-highlight">Flex item 3</div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="p-2 bd-highlight">Flex item 1</div>
+                                <div class="p-2 bd-highlight">Flex item 2</div>
+                                <div class="p-2 bd-highlight">Flex item 3</div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>

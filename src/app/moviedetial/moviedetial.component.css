@@ -1,0 +1,7 @@
+.maxht{
+    max-height: 100vh !important;
+    overflow: auto;
+}
+.videoht{
+    height:100vh !important;
+}

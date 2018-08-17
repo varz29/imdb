@@ -1,0 +1,17 @@
+.cardtex{
+    top:246px;
+    background: black !important;
+    opacity: 0.6;
+    font-weight: 400;
+}
+.height{
+    height:298px;
+}
+.card-text{
+    color: white;
+    font-weight: 600;
+    opacity: 1 !important;
+}
+p:hover{
+    text-decoration: underline !important;
+}

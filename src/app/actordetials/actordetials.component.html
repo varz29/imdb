@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      Name of the actor: {{slid.actorResponse.firstName}} &nbsp; {{slid.actorResponse.lastName}}
+
+    </div>
+    <div class="card-body">
+      <div class="card-text">
+        <p>Gender :{{slid.actorResponse.gender}}</p>
+        <h3>list of movies acted</h3>
+        <p *ngFor="let movie of slid.actorDetails" (click)="gotoMovieDetail(movie.movieResponse)">
+          {{movie.movieResponse.name}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

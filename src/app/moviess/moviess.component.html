@@ -1,0 +1,84 @@
+<div class="bg">
+  <app-navbar></app-navbar>
+
+  <main role="main" style="background-color: rgba(185,185,185,0.1);">
+    <div class="container p-0">
+      <div class="row ml-0 mr-0">
+        <div class="col-md-8">
+          <div class="row bg_grey pb-3 pt-3 pl-2 pr-2">
+            <div class="col-md-4 mb-3" *ngFor="let movie of movie_list.slice(0, 3)">
+              <div class="card" (click)="gotoMovieDetail(movie)">
+                <img class="card-img-top height" [src]="movie.image" alt="Card image cap">
+                <div class="card-img-overlay p-0 cardtex">
+                  <p class="card-text ">{{movie.name}}</p>
+                </div>
+              </div>
+            </div>
+            <a class="pl-3 font_blue" (click)="gotoGetallmovies()">Browse Movies
+              <i class="fa fa-angle-double-right"></i>
+            </a>
+          </div>
+          <app-singlecard [obj]="singlecardobj1"></app-singlecard>
+          <app-twocards [obj]="obj4"> </app-twocards>
+          <div class="row">
+            <div class="col-md-4 mb-3" *ngFor="let movie of movie_list.slice(0, 3)">
+              <div class="card" (click)="gotoMovieDetail(movie)">
+                <img class="card-img-top" src="../assets/images/imdblogo.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">{{movie.name}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3" *ngFor="let movie of movie_list.slice(0, 3)">
+              <div class="card" (click)="gotoMovieDetail(movie)">
+                <img class="card-img-top" src="../assets/images/imdblogo.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">{{movie.name}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-3" *ngFor="let movie of movie_list.slice(0, 3)">
+              <div class="card">
+                <img class="card-img-top" src="../assets/images/imdblogo.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">{{movie.name}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 bg-light">
+          <div class="row mt-4">
+            <div class="card w-100 ml-2 mr-2">
+              <div class="card-body">
+                <h4 class="card-title">
+                  Top Indian Charts
+                </h4>
+
+
+                <p class="card-text m-0 font_blue" (click)="gotoMovieByGenre(generes[1])">Top comedy movies</p>
+                <p class="card-text m-0 font_blue" (click)="gotoMovieByGenre(generes[0])"> Top thriller movies</p>
+                <p class="card-text m-0 font_blue" (click)="gotoMovieByGenre(generes[2])">Top documentary movies</p>
+                <p class="card-text m-0 font_blue" (click)="gotoMovieByGenre(generes[3])"> Top short movies</p>
+                <p class="card-text m-0 font_blue" (click)="gotoMovieByGenre(generes[4])">Top crime movies</p>
+                <p class="card-text m-0 font_blue" (click)="gotoMovieByGenre(generes[5])"> Top Western movies</p>
+                <p class="card-text m-0 font_blue" (click)="gotoMovieByGenre(generes[6])">Top Family movies</p>
+                <p class="card-text m-0 font_blue" (click)="gotoMovieByGenre(generes[7])"> Top Animation movies</p>
+                <p class="card-text m-0 font_blue" (click)="gotoMovieByGenre(generes[8])"> Top drama movies</p>
+                <p class="card-text m-0 font_blue" (click)="gotoMovieByGenre(generes[9])"> Top romance movies</p>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,54 @@
+<div class="row w-100">
+  <div class="col-md-9 p-0">
+    <div class="video videoht" #mine>
+      <video controls #videoPlayer id="videoPlayer " class="w-100 videoht ">
+        <source src="{{slid.video}} " type="video/mp4 " /> Browser not supported
+      </video>
+    </div>
+  </div>
+  <div class="col-md-3 bg_grey maxht">
+    <div class="row pt-4 ">
+
+      <div class="col-md-6 p-0 ">
+        <div class="card p-0 border-0 ">
+          <div class="card-body p-0 bg_grey ">
+            <img [src]="slid.image" alt="hjdsaflhkj " class="w-100 ">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 ">
+        <div class="card h-100 border-0 ">
+          <div class="card-body p-0 bg_grey cartext ">
+            <p class="card-text ">
+              {{slid.name}}
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="card w-100  border-left-0 border-right-0 ">
+        <div class="card-body p-0 bg_grey cartext pl-1">
+          <p class="card-title"> List of Directors</p>
+          <p class="card-text" *ngFor="let director of slid.directors ">
+            {{director.firstName}}
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="card w-100 border-left-0 border-right-0 ">
+        <div class="card-body p-0 bg_grey cartext pl-1">
+          <p class="card-title"> List of Actors</p>
+          <p class="card-text" *ngFor="let actor of slid.actors ">
+            {{actor.firstName}}
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>

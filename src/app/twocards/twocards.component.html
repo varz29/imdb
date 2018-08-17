@@ -1,0 +1,21 @@
+<div class="row">
+  <h5 class="w-100">{{obj.title}}</h5>
+
+  <div class="col-md-6 mb-3 pl-0 pr-0" *ngFor="let item of hero">
+    <div class="card rounded-0 ">
+      <img class="card-img-top heightsinglecard" src="{{item.src}}" alt="Card image cap">
+
+    </div>
+  </div>
+  <div class="card-body pl-0 pr-0">
+
+    <p class="card-text">{{subtitle}}</p>
+    <!-- <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p> -->
+  </div>
+</div>
+
+
+<!-- [subtitle]="'IMDb dives into the distinct trademarks of Christopher Nolan's directorial style to illustrate what The Dark
+Knight, Inception, and Memento have in common.'" -->

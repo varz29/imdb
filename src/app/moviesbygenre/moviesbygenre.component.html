@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+        <label class="btn buttonbg active font_white" (click)="gotoMovieByGenre(generes[0])">
+            thriller
+        </label>
+        <label class="btn buttonbg font_white" (click)="gotoMovieByGenre(generes[1])">
+            comedy
+        </label>
+        <label class="btn buttonbg font_white" (click)="gotoMovieByGenre(generes[2])">
+            Documentary
+        </label>
+        <label class="btn buttonbg font_white " (click)="gotoMovieByGenre(generes[3])">
+            short
+        </label>
+        <label class="btn buttonbg font_white " (click)="gotoMovieByGenre(generes[4])">
+            Crime
+        </label>
+        <label class="btn buttonbg font_white " (click)="gotoMovieByGenre(generes[5])">
+            Western
+        </label>
+        <label class="btn buttonbg font_white " (click)="gotoMovieByGenre(generes[6])">
+            Family
+        </label>
+        <label class="btn buttonbg font_white " (click)="gotoMovieByGenre(generes[7])">
+            Animation
+        </label>
+        <label class="btn buttonbg font_white " (click)="gotoMovieByGenre(generes[8])">
+            drama
+        </label>
+        <label class="btn buttonbg font_white" (click)="gotoMovieByGenre(generes[9])">
+            Romance
+        </label>
+
+    </div>
+
+    <h4 class="p-2" style="text-align:center">{{genre}}Movies</h4>
+    <div class="row">
+        <div class="card col-md-3" *ngFor="let movie of slid">
+            <div class="card-body p-1">
+                <img src="..\assets\images\28movie.jpg" width="210px" height="298px" alt="ssadf">
+                <h5 class="card title">
+                    {{movie.movie_id}} </h5>
+            </div>
+        </div>
+    </div>
+</div>

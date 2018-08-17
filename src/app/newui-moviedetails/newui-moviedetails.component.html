@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="card w-100">
+            <div class="card-header">
+                {{slid.movieResponse.name}}
+            </div>
+            <div class="card-body">
+                <h3 class="card-title"> List of Directors</h3>
+                <p class="card-text" *ngFor="let director of slid.directorResponses">
+                    {{director.firstName}}
+                </p>
+                <h3 class="card-title"> List of Actors</h3>
+                <p class="card-text" *ngFor="let actor of slid.actorResponses" (click)="gotoActorDetail(actor)">
+                    {{actor.firstName}}
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
